@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <h1>Web App 1</h1>
     <div>
         <h3>Login Form</h3>
-        <p><input type="text"></p>
+        <p><label id="lblMessage"></label></p>
+        <p><input type="text" id="txtEmail"></p>
          <p><input type="password"></p>
-          <p><button class="login-btn">Login</button></p>
+          <p><button class="login-btn" onclick="dispMessage()">Login</button></p>
           <hr>
-          <p><button>Create Account</button></p>
+          <p><button class="register-btn">Create Account</button></p>
     </div>
 </body>
 </html>
