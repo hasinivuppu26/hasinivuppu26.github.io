@@ -5,4 +5,5 @@ function dispMessage(){
     //alert("Hello")
     // alert(document.getElementById("txtEmail").value)
     lblMessage.innerHTML = document.getElementById("txtEmail").value
+    lblPassword.innerHTML = document.getElementById("txtPassword").value
 }
