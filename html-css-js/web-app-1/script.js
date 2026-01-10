@@ -1,32 +1,16 @@
 function dispMessage(){
-    //     a=10
-    //     b=20
-    //     c=a+b
-        // alert("Hello")
-//         const user = { 
-//          name: "Hasini",
-//          email:"hasinivuppu1052@gmail.com",
-//          password: "1234",
-// };
-//         console.log(user.name);
-//         console.log("Hello")
-    //  const arr = ["Maths","Science"];
-    //  console.log(arr[0]);
-    //  arr.push("English")
-    //  console.log(arr)
-
-    //     alert(document.getElementById("txtEmail").value)
-    //    lblMessage.innerHTML = document.getElementById("txtEmail").value
-    // lblPassword.innerHTML= document.getElementById("txtPassword").value
-    // let email = document.getElementById("txtEmail").value
-    // let password = document.getElementById("txtPassword").value
-    // if(email==="hasinivuppu1052@gmail.com" && password==="1234"){
-    //     lblMessage.innerHTML = "Welcome Hasini";
-    //     lblMessage.style.color = "green";
-    // }else{
-    //     lblMessage.innerHTML = "Access Denied";
-    //     lblMessage.style.color = "red";
-    // }
+    let email = document.getElementById("txtEmail").value
+    let password = document.getElementById("txtPassword").value
+    let found = users.find(
+        (element=>element.email===email && element.password == password)
+    );
+    if(found){
+        lblMessage.innerHTML = "Welcome " + found.name
+        lblMessage.style.color = "green"
+    }else{
+        lblMessage.innerHTML = "Access Denied"
+        lblMessage.style.color = "red"
+    }
 }
 function showLoginForm(){
     let str = `
